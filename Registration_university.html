@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>University Registration</title>
+    <style>
+        body {
+            background-image: url('image/background.jpg');
+            background-size: cover;
+
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(8, 8, 8);
+        }
+
+        .div1 {
+            color: rgb(252, 248, 249);
+            font-size: 20px;
+
+            font-weight: bold;
+            border: solid silver 3px;
+            text-align: center;
+            width: 800px;
+            height: auto;
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+        }
+
+
+        .divbutton {
+            background-color: rgb(91, 155, 228);
+            border: none;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 2px 2px;
+            cursor: pointer;
+            font-size: 22px;
+            height: 40px;
+            width: 150px;
+
+        }
+
+        .divbutton:hover {
+            background-color: greenyellow;
+            transform: scale(1.3);
+        }
+
+        .divform {
+            text-align: left;
+            margin: 0px 20px 0px 50px;
+
+
+        }
+
+        .textbox {
+            color: red;
+            position: relative;
+            margin: 10px 0;
+            font-size: 20px;
+            width: 400px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <form>
+
+        <h1> UNIVERSITY OF TUNGSTUN </h1>
+        <div class="div1">
+            <h2 style="color:rgba(199, 236, 31, 0.699)"><ins>Registration Form </ins></h2>
+            <div class="divform">
+
+                First Name *:<br><input class="textbox" type="text" name="fname" placeholder="Enter First Name"
+                    required> <br>
+                Last Name *:<br><input class="textbox" type="text" name="lname" placeholder="Enter Last Name" required>
+                <br>
+                Email *:<br><input class="textbox" type="email" name="email" placeholder="Enter Email Address"
+                    required><br><br>
+                Gender *:&nbsp <input type="radio" name="gender" value="male">Male &nbsp
+                <input type="radio" name="gender" value="female">Female<br><br>
+                DOB *:<br> <input class="textbox" type="date" name="date" value="DOB"><br><br>
+                School From*:<br><select class="textbox" name="school" value="school" required>
+                    <option>Select School From</option>
+                    <option> SSM School of Science </option>
+                    <option> DBM School of comerce</option>
+                    <option> IBM School of IT</option>
+                    <option> SSM School of Science </option>
+                    <option> DBM School of comerce</option>
+                    <option> IBM School of IT</option>
+                </select>
+                <br><br>
+                <!-- Stream From *:<input type="checkbox" name="Sci" value="sci">
+                <label for="Sci"> Science</label>
+                <input type="checkbox" name="com" value="com">
+                <label for="com"> commerce</label>
+                <input type="checkbox" name="Art" value="Art">
+                <label for="Art"> Art</label><br><br> -->
+
+
+                Admission To *:<br><select class="textbox" name="stream" value="stream" required>
+                    <option>Select Addmission for</option>
+                    <option> BCA </option>
+                    <option> B.Com</option>
+                    <option> BA</option>
+                    <option> ITI </option>
+
+                </select>
+                <br><br>
+
+                Hobby *:<input type="checkbox" name="Painting" value="Painting">
+                <label for="Painting"> Painting</label>
+                <input type="checkbox" name="Singing" value="Singing">
+                <label for="Singing"> Singing</label>
+                <input type="checkbox" name="Dancing" value="Dancing">
+                <label for="Dancing">
+                    Dancing</label><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" name="other" value="other">
+                <label for="other"> Other: </label>&nbsp;&nbsp;
+                <input type="text" name="other" placeholder="Example: Teaching">
+
+                <br><br>
+                Address *: <br><textarea name="coments" cols="52" rows="5" placeholder="TYPE YOUR ADDRESS"></textarea>
+                <br>
+                City *: <br><input class="textbox" type="text" name="city" placeholder="Enter City Name" required>
+                <br>
+                State *:<br> <input class="textbox" type="text" name="state" placeholder="Enter State Name" Required>
+                <br><br>
+                Pin (Recheck)*: &nbsp;&nbsp; <input style="font-size :20px" type="number" name="pin"
+                    placeholder="Pin Code" maxlength="4" required>
+                <br><br>
+            </div>
+            <input class="divbutton" type="Submit" value="Submit">
+            &nbsp &nbsp
+            <input class="divbutton" type="reset" value="Reset">
+
+
+        </div>
+
+    </form>
+</body>
+
+</html>
